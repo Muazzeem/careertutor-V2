@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer py-5 mt-7 bg-gradient-dark position-relative overflow-hidden">
+  <footer class="footer py-5 mt-7 bg-gradient-dark">
     <div class="container position-relative">
       <div class="row">
         <div class="col-lg-4 me-auto my-auto text-lg-start text-center">
@@ -37,11 +37,6 @@
       </div>
     </div>
   </footer>
-  <div id="mybutton">
-    <button data-bs-toggle="modal" data-bs-target="#exampleModalForm" type="button"
-            class="btn bg-gradient-info feedback">Feedback
-    </button>
-  </div>
 </template>
 
 <script>
@@ -51,13 +46,4 @@ export default {
 </script>
 
 <style scoped>
-.feedback {
-
-}
-
-#mybutton {
-  position: fixed;
-  bottom: -.5rem;
-  right: .5rem;
-}
 </style>

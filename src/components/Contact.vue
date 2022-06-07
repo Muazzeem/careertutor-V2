@@ -5,7 +5,7 @@
         <div class="col-lg-10 mx-auto d-flex justify-content-center flex-column">
           <div class="card d-flex justify-content-center p-4 shadow-lg">
             <div class="text-center">
-              <h3 class="text-gradient text-primary">Contact us</h3>
+              <h3>Contact us</h3>
               <p class="mb-0">
                 For further questions, including partnership opportunities, please email hello@creative-tim.com
                 or contact using our contact form.

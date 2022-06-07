@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid py-7">
-    <div class="row mt-5">
-      <div class="mx-auto">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="">
         <!-- Modal -->
         <div class="modal fade" id="exampleModalForm" tabindex="-1" aria-labelledby="exampleModalForm"
              aria-hidden="true">
