@@ -3,8 +3,8 @@
     <div v-if="file === null" class="card-body align-items-center text-center">
       <div class="image-upload"><label style="cursor: pointer;" for="file">
         <div>
-          <div class="subheading mt-5 mb-5"><img src="https://img.icons8.com/stickers/30/undefined/import-pdf-2.png"/>Select
-            or Drag or Drop File
+          <div class="subheading mt-5 mb-5"><img src="https://img.icons8.com/stickers/30/undefined/import-pdf-2.png"/>
+            আপনার সিভি আপলোড করুন
           </div>
         </div>
         <input @change="onPdf" data-required="image" ref="inputFile"
@@ -121,7 +121,7 @@ export default {
         };
         fileReader.readAsArrayBuffer(file);
       } else {
-        Swal.fire('Upload only pdf files.')
+        Swal.fire('শুধুমাত্র পিডিএফ ফাইল আপলোড করুন।')
         this.getUnits();
       }
     },
@@ -154,8 +154,8 @@ export default {
                 console.warn(aa)
                 Swal.fire({
                   icon: 'success',
-                  title: 'Your CV has been successfully updated.',
-                  text: 'We will let you know via your E-mail.',
+                  title: 'আপনার সিভি সঠিক ভাবে আপলোড হয়েছে ',
+                  text: 'আমরা আপনাকে আপনার ইমেলের মাধ্যমে যোগাযোগ করবো।',
                   showConfirmButton: false,
                   timer: 3000
                 })
@@ -165,7 +165,7 @@ export default {
             }
         )
       } else {
-        Swal.fire('Upload only pdf files.')
+        Swal.fire('শুধুমাত্র পিডিএফ ফাইল আপলোড করুন।')
       }
     }
   },

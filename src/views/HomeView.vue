@@ -22,6 +22,13 @@ export default {
 </script>
 <style>
 .container-fluid{
-  width: 90% !important;
+  width: 87% !important;
+}
+
+@media (max-width: 991px) {
+  .container-fluid {
+    width: 98% !important;
+    padding: .5rem !important;
+  }
 }
 </style>

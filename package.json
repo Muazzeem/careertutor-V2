@@ -8,10 +8,12 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "aws-deploy": "npm run build && aws s3 sync dist/ s3://careertutor.fractalslab.com --delete --cache-control max-age=0",
-    "deploy-prod": "npm run aws-deploy && aws cloudfront create-invalidation --distribution-id=EBGDKBZE9GMH6 --paths /*"
+    "delete-all": "aws s3 rm s3://careertutor.fractalslab.com --recursive",
+    "aws-deploy": "npm run build && npm run delete-all && aws s3 sync dist/ s3://careertutor.fractalslab.com --delete --cache-control max-age=0",
+    "deploy-prod": "npm run aws-deploy && aws cloudfront create-invalidation --distribution-id=EBGDKBZE9GMH6 --paths /"
   },
   "dependencies": {
+    "@vueform/toggle": "^2.0.2",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "register-service-worker": "^1.7.2",
@@ -19,6 +21,7 @@
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.3",
+    "vue-spinner": "^1.0.4",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
